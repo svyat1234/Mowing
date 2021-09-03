@@ -1,0 +1,75 @@
+.header
+    padding-top: 30px
+    padding-bottom: 28px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__logo
+        position: relative
+        text-transform: uppercase
+        font-size: 25px
+        font-weight: bold
+        text-decoration: none
+        color: #000000
+        padding-left: 49px
+        padding-right: 70px
+        width: 377px
+        &::before
+            content: ''
+            position: absolute
+            width: 37.17px
+            height: 39.81px
+            left: 0
+            top: 0
+            margin-top: -13px
+            background: url('../img/logo.svg')
+        &::after
+            content: ''
+            position: absolute
+            width: 1px
+            height: 41px
+            top: 50%
+            right: 0
+            background-color: #E3E3E3
+            margin-top: -20px
+    &__nav
+        padding-left: 70px
+        max-width: 100%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__search
+        display: flex
+        align-items: center
+        cursor: pointer
+        
+        &__menu
+            width: 38px
+            height: 30px
+            background: url('../img/burger_menu.svg') no-repeat center
+            margin-right: 20px
+        &__text
+            color: #219653
+            font-size: 15px
+    &__call
+        display: flex
+        align-items: center
+        &__button
+            background: transparent
+            border: none
+            border-bottom: 1px solid #219653
+            color: #219653
+            font-size: 15px
+            margin-right: 40px
+            cursor: pointer
+        &__link
+            text-decoration: none
+            color: #000000
+            font-weight: bold
+            font-size: 17px
+            padding-left: 26.96px
+            background: url('../img/phone.svg') no-repeat center left 
+            font-family: Roboto
